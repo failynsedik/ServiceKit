@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ServiceKit_Example' do
+  pod 'ServiceKit', :path => '../'
+
+  target 'ServiceKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
