@@ -1,5 +1,5 @@
 //
-//  ServiceKit.swift
+//  Service.swift
 //  ServiceKit
 //
 //  Created by Failyn Kaye Sedik on 5/25/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ServiceKit {
+public class Service {
 	public let endpoint: EndpointProtocol
 	
 	public init(endpoint: EndpointProtocol) {
