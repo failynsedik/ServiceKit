@@ -1,0 +1,16 @@
+PODS:
+  - ServiceKit (0.1.0)
+
+DEPENDENCIES:
+  - ServiceKit (from `../`)
+
+EXTERNAL SOURCES:
+  ServiceKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ServiceKit: 6c701bd367962870528fe9700858186ebc60f24d
+
+PODFILE CHECKSUM: f7bbe79c4446e8db0d7bb0c72f1f8f6c77251cc8
+
+COCOAPODS: 1.10.2
