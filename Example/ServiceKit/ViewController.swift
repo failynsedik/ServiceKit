@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     }
 
 	private func getUsers() {
-		let serviceKit = ServiceKit(endpoint: UserEndpoint.getUsers(since: 0, limit: 10))
+		let service = Service(endpoint: UserEndpoint.getUsers(since: 0, limit: 10))
 		
 		Task {
-			let users = await serviceKit.request(responseType: [UserListResponse].self)
+			let users = await service.request(responseType: [UserListResponse].self)
 			dump(users)
 		}
 	}

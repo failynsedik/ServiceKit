@@ -16,7 +16,7 @@
 		C125FC5BCD57A5A03F685B285CB8448D /* ServiceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 352E36DFDFB952C4676D7A1A1EC506F3 /* ServiceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C742C724B68B7277121EC419D06DE6C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CF884D9B748C48B4E4CB828FF4694C48 /* Pods-ServiceKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC7DA327217922DCAE4621C95C3982 /* Pods-ServiceKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5E138D5317A03BF4EAAE1F0EE4558F1 /* ServiceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3840E6ADAF820E510607643F8BFDB0 /* ServiceKit.swift */; };
+		D5E138D5317A03BF4EAAE1F0EE4558F1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3840E6ADAF820E510607643F8BFDB0 /* Service.swift */; };
 		DA7EBEC02D3D20ACEC97DD237D853259 /* ServiceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37154B3792D93FD71064B6CB9FFF435 /* ServiceKit-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		A1515DB4B4DC75C76D6FFB9AA391DF16 /* Pods-ServiceKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ServiceKit_Example-dummy.m"; sourceTree = "<group>"; };
 		A1ABA04F56FF24FAC551A0B30EFC5AEB /* Pods_ServiceKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServiceKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6608039E3E753D4A3C55897D2502C4 /* Pods-ServiceKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ServiceKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AF3840E6ADAF820E510607643F8BFDB0 /* ServiceKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKit.swift; path = ServiceKit/Classes/ServiceKit.swift; sourceTree = "<group>"; };
+		AF3840E6ADAF820E510607643F8BFDB0 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ServiceKit/Classes/Service.swift; sourceTree = "<group>"; };
 		B37154B3792D93FD71064B6CB9FFF435 /* ServiceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ServiceKit-dummy.m"; sourceTree = "<group>"; };
 		BD7DC9187B65102D8D1B649F9FC23006 /* Pods-ServiceKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ServiceKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7CDAD1CB8B1478D9A4B32050B74554 /* ServiceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ServiceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -217,7 +217,7 @@
 		D3B4249FC628E5906C5FB52FE3A5DEFE /* ServiceKit */ = {
 			isa = PBXGroup;
 			children = (
-				AF3840E6ADAF820E510607643F8BFDB0 /* ServiceKit.swift */,
+				AF3840E6ADAF820E510607643F8BFDB0 /* Service.swift */,
 				5919B3632324804B26FF74E0ADD53DFD /* EndpointProtocol.swift */,
 				5FD4543B564DA990386C46A578C5E7A5 /* Pod */,
 				01FB728CA782D5C94DCD5055E04EE5F5 /* Support Files */,
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E138D5317A03BF4EAAE1F0EE4558F1 /* ServiceKit.swift in Sources */,
+				D5E138D5317A03BF4EAAE1F0EE4558F1 /* Service.swift in Sources */,
 				DA7EBEC02D3D20ACEC97DD237D853259 /* ServiceKit-dummy.m in Sources */,
 				0FF1032936860D7190A840F6C622CCB5 /* EndpointProtocol.swift in Sources */,
 			);
