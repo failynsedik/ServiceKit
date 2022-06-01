@@ -17,7 +17,7 @@ public protocol EndpointProtocol {
 	var path: String { get }
 	var httpMethod: EndpointRequestMethod { get }
 	var parameters: [String: Any] { get }
-	var headers: [String: String] { get }
+	var headers: [String: String]? { get }
 }
 
 extension EndpointProtocol {
@@ -27,11 +27,9 @@ extension EndpointProtocol {
 		components.host = host
 		components.path = path
 		
-		var queryItems = [URLQueryItem]()
-		for (key, value) in parameters {
-			queryItems.append(URLQueryItem(name: key, value: "\(value)"))
-		}
-		components.queryItems = queryItems
+		components.queryItems = parameters.map({ (key: String, value: Any) in
+			URLQueryItem(name: key, value: "\(value)")
+		})
 		
 		return components
 	}
@@ -44,9 +42,9 @@ extension EndpointProtocol {
 		var request = URLRequest(url: url)
 		request.httpMethod = httpMethod.rawValue
 		
-		for (key, value) in headers {
+		headers?.forEach({ (key: String, value: String) in
 			request.setValue(value, forHTTPHeaderField: key)
-		}
+		})
 		
 		return request
 	}
