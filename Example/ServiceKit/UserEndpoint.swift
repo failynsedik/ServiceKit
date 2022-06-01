@@ -45,7 +45,7 @@ extension UserEndpoint: EndpointProtocol {
 		}
 	}
 	
-	var headers: [String: String] {
+	var headers: [String: String]? {
 		[
 			"Content-Type": "application/json",
 			"Accept": "application/vnd.github.v3+json",

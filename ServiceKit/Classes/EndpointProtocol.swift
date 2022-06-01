@@ -17,7 +17,7 @@ public protocol EndpointProtocol {
 	var path: String { get }
 	var httpMethod: EndpointRequestMethod { get }
 	var parameters: [String: Any] { get }
-	var headers: [String: String] { get }
+	var headers: [String: String]? { get }
 }
 
 extension EndpointProtocol {
@@ -44,9 +44,9 @@ extension EndpointProtocol {
 		var request = URLRequest(url: url)
 		request.httpMethod = httpMethod.rawValue
 		
-		for (key, value) in headers {
+		headers?.forEach({ (key: String, value: String) in
 			request.setValue(value, forHTTPHeaderField: key)
-		}
+		})
 		
 		return request
 	}
