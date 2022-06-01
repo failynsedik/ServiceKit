@@ -27,11 +27,9 @@ extension EndpointProtocol {
 		components.host = host
 		components.path = path
 		
-		var queryItems = [URLQueryItem]()
-		for (key, value) in parameters {
-			queryItems.append(URLQueryItem(name: key, value: "\(value)"))
-		}
-		components.queryItems = queryItems
+		components.queryItems = parameters.map({ (key: String, value: Any) in
+			URLQueryItem(name: key, value: "\(value)")
+		})
 		
 		return components
 	}
