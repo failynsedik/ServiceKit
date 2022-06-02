@@ -48,4 +48,8 @@ extension EndpointProtocol {
 		
 		return request
 	}
+	
+	public var headers: [String: String]? {
+		return nil
+	}
 }
